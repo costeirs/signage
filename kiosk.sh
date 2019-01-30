@@ -5,7 +5,7 @@ set -e
 xscreensaver -no-splash &   # no splash
 xset s off -dpms &          # disable dpms and screen saver blanking
 xset s noblank &            # disable blanking video device
-unclutter -idle 0.1 &       # hide cursor when idle
+unclutter -idle 0.5 &       # hide cursor when idle
 
 
 # chromium kiosk
