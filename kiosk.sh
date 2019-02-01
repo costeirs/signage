@@ -1,6 +1,8 @@
 #! /bin/sh
 set -e
 
+URL="https://www.google.com/"
+
 # power settings
 xscreensaver -no-splash &   # no splash
 xset s off -dpms &          # disable dpms and screen saver blanking
@@ -69,6 +71,6 @@ chromium \
     --window-size=7000,7000 \
     --kiosk \
     --incognito \
-    "https://www.google.com/"
+    "$URL"
 
 done
