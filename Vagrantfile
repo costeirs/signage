@@ -1,5 +1,3 @@
-require './vagrant-provision-reboot-plugin'
-
 Vagrant.configure("2") do |config|
   config.vm.box = "debian/stretch64"
   config.vm.post_up_message = ""
@@ -19,6 +17,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", inline: "cd /vagrant && /bin/sh /vagrant/install.sh"
 
-  config.vm.provision :unix_reboot
+  config.vm.provision "shell", inline: "sudo reboot"
 
 end

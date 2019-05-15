@@ -9,7 +9,7 @@ Debian minimal kiosk with Chromium and audio support.
 1. `cd /root` to switch to root's home.
 1. `git clone` this project and `cd` into it.
 1. `./install.sh`
-1. `shutdown -r now`
+1. `reboot`
 
 ## Configuration
 
